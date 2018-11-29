@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_challenges"
+            android:title="Challenges" />
+
+        <item
+            android:id="@+id/menu_solo"
+            android:title="Discover" />
+        <item
+            android:id="@+id/menu_profil"
+            android:icon="@drawable/com_facebook_profile_picture_blank_portrait"
+            android:title="Profil" />
+    </group>
+
+    <item android:title="Reglages">
+        <menu>
+            <item
+                android:id="@+id/menu_preferences"
+                android:icon="@drawable/main_drawer_menu_share"
+                android:title="Preferences" />
+            <item
+                android:id="@+id/menu_about"
+                android:icon="@drawable/main_drawer_menu_send"
+                android:title="About" />
+        </menu>
+    </item>
+
+</menu>

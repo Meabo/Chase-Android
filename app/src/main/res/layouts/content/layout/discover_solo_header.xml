@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/map_player_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:src="@drawable/docmehdi"
+        app:civ_border="true"
+        app:civ_border_color="#b6ff0000"
+        app:civ_border_width="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <project.chasemvp.Utils.CustomTextView
+        android:id="@+id/map_distance_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="76dp"
+        android:text="Distance"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:fontAssetName="BebasNeue Bold.otf"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <project.chasemvp.Utils.CustomTextView
+        android:id="@+id/map_current_speed_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Speed"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:fontAssetName="BebasNeue Bold.otf"
+        app:layout_constraintTop_toTopOf="@+id/map_distance_title"
+        app:layout_constraintEnd_toStartOf="@+id/map_current_speed"
+        android:layout_marginEnd="8dp" />
+
+
+    <project.chasemvp.Utils.CustomTextView
+        android:id="@+id/map_distance_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="0 km"
+        android:textColor="#000000"
+        android:textSize="12dp"
+        app:fontAssetName="Roboto-Regular.otf"
+        app:layout_constraintBottom_toBottomOf="@+id/map_distance_title"
+        app:layout_constraintTop_toTopOf="@+id/map_distance_title"
+        app:layout_constraintStart_toEndOf="@+id/map_distance_title"
+        android:layout_marginStart="24dp" />
+
+    <project.chasemvp.Utils.CustomTextView
+        android:id="@+id/map_score_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Score"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        app:fontAssetName="BebasNeue Bold.otf"
+        app:layout_constraintTop_toBottomOf="@+id/map_distance_title"
+        app:layout_constraintStart_toStartOf="@+id/map_distance_title" />
+
+
+    <project.chasemvp.Utils.CustomTextView
+        android:id="@+id/map_score_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:fontAssetName="Roboto-Regular.otf"
+        app:layout_constraintBottom_toBottomOf="@+id/map_score_title"
+        app:layout_constraintTop_toTopOf="@+id/map_score_title"
+        app:layout_constraintEnd_toEndOf="@+id/map_distance_value" />
+
+
+    <project.chasemvp.Utils.CustomTextView
+        android:id="@+id/map_current_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        tools:text="00:00"
+        android:textColor="#000000"
+        android:textSize="40dp"
+        app:fontAssetName="BebasNeue Bold.otf"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="8dp"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/map_score_title" />
+
+    <project.chasemvp.Utils.CustomTextView
+        android:id="@+id/map_current_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="0 km/h"
+        android:textColor="#000000"
+        android:textSize="12dp"
+        app:fontAssetName="Roboto-Regular.otf"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toTopOf="@+id/map_current_speed_title"
+        android:layout_marginTop="0dp" />
+
+</android.support.constraint.ConstraintLayout>
+

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:background="#4d343434">
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/dialog_guardian_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="30dp"
+        android:cropToPadding="false"
+        android:src="@drawable/ultraboostobject"
+        custom:layout_constraintBottom_creator="1"
+        custom:layout_constraintLeft_creator="1"
+        custom:layout_constraintRight_creator="1"
+        fancy:layout_constraintBottom_toTopOf="@+id/take_it_button"
+        fancy:layout_constraintLeft_toLeftOf="parent"
+        fancy:layout_constraintRight_toRightOf="parent" />
+
+    <project.chasemvp.Utils.CustomTextView
+        android:id="@+id/dialog_guardian_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        custom:fontAssetName="BebasNeue Bold.otf"
+        custom:layout_constraintBottom_creator="1"
+        custom:layout_constraintLeft_creator="1"
+        fancy:layout_constraintBottom_toTopOf="@+id/dialog_guardian_image"
+        fancy:layout_constraintHorizontal_bias="0.487"
+        fancy:layout_constraintLeft_toLeftOf="parent"
+        fancy:layout_constraintRight_toRightOf="parent"
+        fancy:layout_constraintTop_toTopOf="parent"
+        fancy:layout_constraintVertical_bias="0.44" />
+
+    <project.chasemvp.Utils.CustomTextView
+        android:id="@+id/dialog_guardian_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Now catch him !"
+        android:textColor="#FFFFFF"
+        android:textSize="50dp"
+        custom:fontAssetName="BebasNeue Bold.otf"
+        custom:layout_constraintBottom_creator="1"
+        custom:layout_constraintLeft_creator="1"
+        fancy:layout_constraintEnd_toEndOf="@+id/dialog_guardian_name"
+        fancy:layout_constraintStart_toStartOf="@+id/dialog_guardian_name"
+        android:layout_marginTop="16dp"
+        fancy:layout_constraintTop_toBottomOf="@+id/dialog_guardian_name" />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/take_it_button"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        fancy:fb_defaultColor="#FFFFFF"
+        fancy:fb_focusColor="#686869"
+        fancy:fb_iconPosition="left"
+        fancy:fb_radius="5dp"
+        fancy:fb_text="GO !"
+        fancy:fb_textSize="16sp"
+        fancy:fb_textColor="#000000"
+        custom:layout_constraintRight_creator="1"
+        custom:layout_constraintBottom_creator="1"
+        fancy:layout_constraintBottom_toBottomOf="parent"
+        fancy:layout_constraintRight_toRightOf="@+id/dialog_guardian_image"
+        custom:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="101dp"
+        fancy:layout_constraintLeft_toLeftOf="@+id/dialog_guardian_image" />
+</android.support.constraint.ConstraintLayout>

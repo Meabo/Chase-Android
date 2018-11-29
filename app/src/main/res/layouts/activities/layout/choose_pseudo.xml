@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff">
+
+    <project.chasemvp.Utils.CustomTextView
+        android:id="@+id/choose_pseudo_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="Qui es tu ?"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/avatar_picker" />
+
+    <EditText
+        android:id="@+id/choose_pseudo_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/choose_pseudo_text"
+        app:layout_constraintStart_toStartOf="@+id/choose_pseudo_text"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/choose_pseudo_text"
+        android:layout_marginEnd="8dp" />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/choose_pseudo_next"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Suivant"
+        fancy:fb_defaultColor="#00bc4e"
+        fancy:fb_focusColor="#00ff90"
+        fancy:fb_fontIconSize="16dp"
+        fancy:fb_radius="5dp"
+        fancy:fb_textColor="#FFFFFF"
+        fancy:fb_textSize="16dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="8dp" />
+
+    <com.yarolegovich.discretescrollview.DiscreteScrollView
+        android:id="@+id/avatar_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp" />
+
+</android.support.constraint.ConstraintLayout>
